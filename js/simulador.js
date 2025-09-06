@@ -1,4 +1,4 @@
-// --------- DATOS DEL PRODUCTO ---------
+// -------- DATOS DEL PRODUCTO --------
 const productos = [
   { nombre: "Harina PAN", precio: 3 },
   { nombre: "Chocolate Savoy", precio: 2 },
@@ -13,7 +13,7 @@ const paisesConImpuesto = {
   "Italia": 0.22
 };
 
-// --------- RENDERIZAR PRODUCTOS ---------
+// -------- RENDERIZAR PRODUCTOS --------
 const listaProductos = document.getElementById("lista-productos");
 
 productos.forEach((prod, index) => {
@@ -90,7 +90,6 @@ btnConfirmar.addEventListener("click", () => {
     <p><strong>Total: €${pedidoActual.total.toFixed(2)}</strong></p>
   `;
 
-  // Guardamos en localStorage
   localStorage.setItem("ultimoPedido", JSON.stringify(pedidoActual));
 
   resultadoDiv.innerHTML = "<p>✅ Pedido confirmado con éxito.</p>";
