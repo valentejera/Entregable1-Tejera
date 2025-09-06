@@ -1,4 +1,4 @@
-// --------- DATOS ---------
+// --------- DATOS DEL PRODUCTO ---------
 const productos = [
   { nombre: "Harina PAN", precio: 3 },
   { nombre: "Chocolate Savoy", precio: 2 },
