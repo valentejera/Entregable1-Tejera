@@ -2,16 +2,36 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Simulador de Productos Venezolanos en Europa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Productos Venezolanos</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Simulador de Importación de Productos Venezolanos</h1>
-  <p>
-    Este simulador permite al usuario seleccionar productos venezolanos para importar dentro de Europa.
-    Podrá elegir entre una lista de productos típicos (como Harina PAN, Chocolate Savoy, o Café Fama de América),
-    calcular el costo total según el país de destino y confirmar su orden. Toda la interacción se hace desde la consola JS.
-  </p>
+  <h1>Simulador de importación de productos venezolanos 🇻🇪</h1>
 
-  <script src="simulador.js"></script>
+  <!-- Selección de país -->
+  <label for="pais">Selecciona país de destino:</label>
+  <select id="pais">
+    <option value="">-- Elige un país --</option>
+    <option value="España">España</option>
+    <option value="Francia">Francia</option>
+    <option value="Alemania">Alemania</option>
+    <option value="Italia">Italia</option>
+  </select>
+
+  <!-- Lista de productos -->
+  <h2>Productos disponibles</h2>
+  <div id="lista-productos"></div>
+
+  <!-- Botones -->
+  <button id="calcular">Calcular total</button>
+  <button id="confirmar" disabled>Confirmar pedido</button>
+
+  <!-- Resultados -->
+  <div id="resultado"></div>
+  <div id="ultimo-pedido"></div>
+
+  <!-- JS al final del body -->
+  <script src="js/simulador.js"></script>
 </body>
 </html>
